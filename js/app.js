@@ -1,19 +1,52 @@
+// ===========================
+// Faik's Arcade
+// Developed by Faik Pathan
+// ===========================
+
 const buttons = document.querySelectorAll(".card button");
 
-buttons.forEach((button,index)=>{
+buttons.forEach((button, index) => {
 
-button.addEventListener("click",()=>{
+    button.addEventListener("click", () => {
 
-if(index===0){
+        switch (index) {
 
-window.location.href="games/snake/index.html";
+            case 0:
+                window.location.href = "games/snake/index.html";
+                break;
 
-}else{
+            case 1:
+                alert("🧩 Tetris - Coming Soon");
+                break;
 
-alert("Coming Soon 🚀");
+            case 2:
+                alert("🚗 Car Racing - Coming Soon");
+                break;
 
-}
+            case 3:
+                alert("🏍️ Bike Racing - Coming Soon");
+                break;
 
-});
+            case 4:
+                alert("🏓 Pong - Coming Soon");
+                break;
+
+            case 5:
+                alert("🧠 2048 - Coming Soon");
+                break;
+
+            case 6:
+                alert("♟️ Chess - Coming Soon");
+                break;
+
+            case 7:
+                alert("🎲 Ludo - Coming Soon");
+                break;
+
+            default:
+                alert("Coming Soon");
+        }
+
+    });
 
 });
